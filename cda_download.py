@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 
+# Selenium wykorzytsać trzeba bo javascript nie zdąży załadować źródła filmu.
+# jakoś ogarnąż zapis do pliku, przepisać do django albo nodeJS ? 
+
 def get_links(Url):
     getURL = requests.get(Url, headers={"User-Agent": "Mozilla/5.0"}) # or Mozilla/5.0 , Chrome/104.0.5112.80
     soup = BeautifulSoup(getURL.text, 'html.parser')
