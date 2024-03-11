@@ -1,12 +1,126 @@
-* {
-    box-sizing: border-box;
-}
-
-html,
 body {
-    height: 100%
+    background-color: #f8fcfc;
 }
 
-body {
+#logo{
+    height: 10%;
+    width: 10%;
+}
+
+#Nazwa {
+    color: #488df1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0px;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+
+#title-name {
+    background-color: white;
+    
+}
+
+nav.top-container {
+    position: relative;
+    width:100%;
+    overflow:hidden;
+    background-color: white;
+    border: 2px solid;
+    border-color: gray;
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px gray;
+    
+}
+
+nav.top-container div {
+    width:24%;
+    border: 1px solid;
+    border-color:  gray;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: white;
+    height: 95%;
+    text-align: center;
+
+
+    color: rgb(83, 169, 219);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+
+.main-container {
+    background-color:white;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    height: 100vh;
 
 }
+
+.download-container {
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: white;
+    box-shadow: 0 10px 20px 0 rgba(153,153,153,.25);
+    background-color: white;
+    height: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+
+}
+#link_input_field {
+    margin: auto;
+    width: 90%;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: none;
+}
+
+.url-div{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.button-div {
+    
+    text-align: center;
+    background-color: white;
+    height: 27%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+    
+}
+.button-div button {
+    background-color: #488df1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    height: 90%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    
+
+}
+
+#main-panel{
+    background-color: white;
+}
+
+
+
+
+
