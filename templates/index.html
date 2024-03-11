@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/index.css" />
     <link rel="icon" type="image/x-icon" href="../../static/images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -35,12 +36,27 @@
 
             <div class="button-div">
                 <button id="download-button">Pobierz</button>
-            </div>
-            
+            </div>    
         </div>
     </div>
 
-
+    <script>
+        $(document).ready(function() {
+            $('#download-button').click(function() {
+                $.ajax({
+                    type: 'POST',
+                    url: '/download',  // Flask route URL
+                    data: { link_input_field: $('#link_input_field').val() },  // Get input field value
+                    success: function(response) {
+                        alert(response);  // Display success message
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error:', error);  // Display error message
+                    }
+                });
+            });
+        });
+    </script>
 
 
 

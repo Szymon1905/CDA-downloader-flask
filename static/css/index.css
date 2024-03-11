@@ -113,7 +113,16 @@ nav.top-container div {
     font-size: inherit;
     font-family: inherit;
     
+}
 
+.button-div button:hover {
+    background-color:#0653c5;
+    transition: 0.7s;
+}
+
+.button-div button:active {
+    background-color:#061325;
+    transition: 0.7s;
 }
 
 #main-panel{
